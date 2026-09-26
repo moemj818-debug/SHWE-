@@ -1,0 +1,43 @@
+{
+  "entities": {
+    "User": {
+      "title": "User",
+      "description": "User profile with monthly quota and claimed audio stats",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string" },
+        "email": { "type": "string" },
+        "displayName": { "type": "string" },
+        "photoURL": { "type": "string" },
+        "createdAt": { "type": "string" },
+        "quotaMonth": { "type": "string" },
+        "usedWords": { "type": "number" },
+        "totalClaimedWords": { "type": "number" },
+        "totalActivities": { "type": "number" },
+        "membership": { "type": "string" }
+      },
+      "required": ["id", "email"]
+    },
+    "AudioActivity": {
+      "title": "AudioActivity",
+      "description": "Audio generation and listening activity record with claim data",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string" },
+        "userId": { "type": "string" },
+        "title": { "type": "string" },
+        "text": { "type": "string" },
+        "wordCount": { "type": "number" },
+        "syllableCount": { "type": "number" },
+        "voice": { "type": "string" },
+        "provider": { "type": "string" },
+        "speed": { "type": "number" },
+        "createdAt": { "type": "string" },
+        "claimed": { "type": "boolean" },
+        "claimTokens": { "type": "number" },
+        "audioUrl": { "type": "string" }
+      },
+      "required": ["id", "userId", "title", "text", "wordCount", "createdAt"]
+    }
+  }
+}

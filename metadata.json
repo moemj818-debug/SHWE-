@@ -1,0 +1,6 @@
+{
+  "name": "ShweVoice - Burmese Text to Audio",
+  "description": "Natural Burmese voice synthesis with adjustable reading speeds, 100,000 free words per month, and full offline playback capabilities.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
